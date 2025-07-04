@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1751663329256,
+  "timestamp": 1751664889645,
   "index": "https://ARL150.github.io/Notaria-32/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://ARL150.github.io/Notaria-32/favicon.ico",
         "https://ARL150.github.io/Notaria-32/index.html",
-        "https://ARL150.github.io/Notaria-32/main-WAFT67HN.js",
+        "https://ARL150.github.io/Notaria-32/main-2ECC7R3E.js",
         "https://ARL150.github.io/Notaria-32/manifest.webmanifest",
         "https://ARL150.github.io/Notaria-32/scripts-WL2QHKC5.js",
         "https://ARL150.github.io/Notaria-32/styles-VALLJJDY.css"
@@ -76,9 +76,9 @@
     "https://ARL150.github.io/Notaria-32/icons/sss.png": "15c4180454633880d98674aa7394656196c91584",
     "https://ARL150.github.io/Notaria-32/icons/vvv.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
     "https://ARL150.github.io/Notaria-32/image-removebg-preview.jpg": "07659e92e393b6c09df53c45067e0f596a0e127c",
-    "https://ARL150.github.io/Notaria-32/index.html": "687c6c906da57dd90e6a5c48fca3cdfc557185fd",
+    "https://ARL150.github.io/Notaria-32/index.html": "b518aec1f7fcd2185ae88175163b91d87330fbfc",
     "https://ARL150.github.io/Notaria-32/logo.png": "e166a57ec3d84c3293bc2288c914a6165ea0acb8",
-    "https://ARL150.github.io/Notaria-32/main-WAFT67HN.js": "afae7e94841a6c4445c80231a35c931f1a934dba",
+    "https://ARL150.github.io/Notaria-32/main-2ECC7R3E.js": "b00affdd68a67ca72b5bec8ed933d5137e7f2b2f",
     "https://ARL150.github.io/Notaria-32/manifest.webmanifest": "17cf7a5f3308f3a83b9543d21397ab050e68c0e2",
     "https://ARL150.github.io/Notaria-32/media/boxicons-5JNJQPUP.woff": "0fd1f4f29e1a933f60c43e067e1decab3336ece7",
     "https://ARL150.github.io/Notaria-32/media/boxicons-AQ5N6WP7.woff2": "758608b6e39cd423dd99eec3980f8e8aae0d96b0",

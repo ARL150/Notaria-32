@@ -17,8 +17,8 @@ import { Blog } from './components/blog/blog';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, Footer, CarruselComponent, Ubicacion, WhatsappButton, SobreNosotros, Notario, Faq, Servicios, 
-    ContactoRedes, Inicio, Horarios, Pagos, Blog],
+  imports: [RouterOutlet, Navbar, Footer, WhatsappButton
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

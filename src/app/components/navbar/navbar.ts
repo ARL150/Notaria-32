@@ -4,9 +4,10 @@ import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
+  standalone: true,
   imports: [CommonModule, RouterModule],
   templateUrl: './navbar.html',
-  styleUrl: './navbar.css'
+  styleUrls: ['./navbar.css']
 })
 export class Navbar {
   burgerActive = false;
@@ -19,10 +20,10 @@ export class Navbar {
     this.burgerActive = false;
   }
 
-  // Escucha clics fuera del menú para cerrarlo
+  // Cerrar menú si se da click fuera
   @HostListener('document:click', ['$event'])
   onClickOutside(event: Event) {
-    const clickedInside = (event.target as HTMLElement).closest('.custom-navbar, .mobile-menu');
+    const clickedInside = (event.target as HTMLElement).closest('.navbar-burger-container');
     if (!clickedInside) {
       this.closeBurger();
     }

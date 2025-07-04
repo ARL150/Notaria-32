@@ -1,0 +1,28 @@
+<nav class="custom-navbar">
+  <div class="logo-visible">
+    <img src="./logo.png" alt="Logo Notaría 32" />
+  </div>
+
+  <ul class="navbar-center">
+    <li><a class="navbar-item nav-link" [routerLink]="['/home']" routerLinkActive="active">Inicio</a></li>
+    <li><a class="navbar-item nav-link" [routerLink]="['/servicios']" routerLinkActive="active">Servicios</a></li>
+    <li><a class="navbar-item nav-link" [routerLink]="['/nosotros']" routerLinkActive="active">Nosotros</a></li>
+    <li><a class="navbar-item nav-link" [routerLink]="['/contacto']" routerLinkActive="active">Contacto</a></li>
+    <li><a class="navbar-item nav-link" [routerLink]="['/blog']" routerLinkActive="active">Blog</a></li>
+  </ul>
+
+  <!-- Ícono hamburguesa -->
+  <div class="navbar-burger-icon" (click)="toggleBurger()">
+    <i class="fas" [ngClass]="burgerActive ? 'fa-times' : 'fa-bars'"></i>
+  </div>
+</nav>
+
+<!-- Menú móvil -->
+<div class="mobile-menu" *ngIf="burgerActive">
+  <a class="mobile-link" [routerLink]="['/home']" (click)="closeBurger()">Inicio</a>
+  <a class="mobile-link" [routerLink]="['/servicios']" (click)="closeBurger()">Servicios</a>
+  <a class="mobile-link" [routerLink]="['/nosotros']" (click)="closeBurger()">Nosotros</a>
+  <a class="mobile-link" [routerLink]="['/contacto']" (click)="closeBurger()">Contacto</a>
+  <a class="mobile-link" [routerLink]="['/ubicacion']" (click)="closeBurger()">Ubicacion</a>
+  <a class="mobile-link" [routerLink]="['/blog']" (click)="closeBurger()">Blog</a>
+</div>

@@ -1,0 +1,18 @@
+<section class="faq-section">
+    <div class="faq-container">
+        <h2>Preguntas Frecuentes</h2>
+        <p class="subtexto">Aquí responderemos las dudas más frecuentes relacionadas con nuestros trámites notariales.
+        </p>
+
+        <div class="faq-item" *ngFor="let faq of faqs; let i = index" (click)="toggleFaq(i)"
+            [class.abierta]="faq.abierta">
+            <div class="pregunta">
+                <span>{{ faq.pregunta }}</span>
+                <span class="icono">{{ faq.abierta ? '−' : '+' }}</span>
+            </div>
+            <div class="respuesta" *ngIf="faq.abierta">
+                {{ faq.respuesta }}
+            </div>
+        </div>
+    </div>
+</section>

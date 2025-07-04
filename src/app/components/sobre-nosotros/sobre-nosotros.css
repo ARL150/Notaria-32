@@ -1,0 +1,58 @@
+.sobre-nosotros-card {
+  max-width: 700px;
+  margin: 3rem auto;
+  background: linear-gradient(135deg, #e6f0ff, #f9fbfe);
+  padding: 3.5rem 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 31, 63, 0.1);
+  font-family: 'Poppins', sans-serif;
+  color: #001f3f;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decoración sutil en background (líneas diagonales) */
+.sobre-nosotros-card::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -40%;
+  width: 200%;
+  height: 200%;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(0, 31, 63, 0.03),
+    rgba(0, 31, 63, 0.03) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 20px;
+}
+
+.sobre-nosotros-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.sobre-nosotros-card h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #002855;
+  text-shadow: 1px 1px 2px rgba(0, 31, 63, 0.15);
+}
+
+.sobre-nosotros-card p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  max-width: 520px;
+  margin: 0 auto;
+  color: #3a4b63;
+  font-weight: 400;
+  font-style: normal;
+}

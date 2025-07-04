@@ -1,0 +1,65 @@
+.contacto-redes {
+  width: 100%;
+  padding: 5rem 1.5rem;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  color: #001f3f;
+  text-align: center;
+  border-top: 1px solid #eaeef3;
+  border-bottom: 1px solid #eaeef3;
+}
+
+.contacto-redes h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  color: #003366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.contacto-redes h2 i {
+  color: #00509e;
+  font-size: 1.8rem;
+}
+
+.info-contacto p {
+  font-size: 1.05rem;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #445c74;
+}
+
+.info-contacto a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.info-contacto a:hover {
+  color: #00509e;
+}
+
+.redes-sociales {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.redes-sociales a {
+  font-size: 2.6rem;
+  color: #003366;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  color: #00509e;
+  transform: scale(1.1);
+}

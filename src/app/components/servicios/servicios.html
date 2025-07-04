@@ -1,0 +1,21 @@
+<section class="servicios-section">
+  <div class="container">
+    <h2 class="titulo">Nuestros Servicios</h2>
+    <p class="subtitulo">Conoce las áreas en las que podemos apoyarte con total legalidad, confianza y profesionalismo.
+    </p>
+    <br>
+    <div class="categorias">
+      <div class="categoria" *ngFor="let servicio of servicios">
+        <div class="icono-categoria">
+          <i class='bx bx-folder'></i>
+        </div>
+        <h3>{{ servicio.categoria }}</h3>
+        <ul>
+          <li *ngFor="let item of servicio.items">
+            <i class='bx bx-chevron-right'></i> {{ item }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

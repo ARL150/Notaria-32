@@ -1,0 +1,90 @@
+.metodos-pago {
+  background-color: #f0f4f8;
+  padding: 4rem 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #001f3f;
+  text-align: center;
+}
+
+.container-metodos {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.titulo-metodos {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #003366;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.titulo-metodos i {
+  font-size: 2rem;
+  color: #00509e;
+}
+
+.lista-pago {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.lista-pago li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  color: #33475b;
+  font-weight: 500;
+}
+
+.lista-pago li i {
+  font-size: 1.8rem;
+  color: #00509e;
+}
+
+/* 📱 Mobile adjustments */
+@media (max-width: 600px) {
+  .titulo-metodos {
+    font-size: 1.6rem;
+    gap: 0.4rem;
+  }
+
+  .titulo-metodos i {
+    font-size: 1.6rem;
+  }
+
+  .lista-pago {
+    font-size: 1rem;
+    gap: 1rem;
+  }
+
+  .lista-pago li i {
+    font-size: 1.5rem;
+  }
+}
+
+/* 💻 Tablet adjustments */
+@media (min-width: 601px) and (max-width: 992px) {
+  .titulo-metodos {
+    font-size: 1.8rem;
+  }
+
+  .lista-pago {
+    font-size: 1.1rem;
+  }
+
+  .lista-pago li i {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,135 @@
+.servicios-section {
+  background: #f9fafb;
+  padding: 4rem 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #00509e;
+  text-align: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.titulo {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  color: #556070;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.categoria {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 31, 63, 0.08);
+  padding: 2rem 1.5rem;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.categoria:hover {
+  transform: translateY(-6px);
+}
+
+.icono-categoria {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00509e;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem 1.1rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 3px solid #f9fafb;
+}
+
+.categoria h3 {
+  font-size: 1.4rem;
+  color: #003366;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.categoria ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #33475b;
+  text-align: left;
+}
+
+.categoria li {
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  justify-content: flex-start;
+}
+
+.categoria li i {
+  color: #00509e;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+/* 📱 Mobile Adjustments */
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+  }
+
+  .icono-categoria {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    top: -25px;
+  }
+
+  .categoria h3 {
+    font-size: 1.2rem;
+  }
+
+  .categoria li {
+    font-size: 0.95rem;
+  }
+}
+
+/* 💻 Tablet Adjustments */
+@media (min-width: 601px) and (max-width: 992px) {
+  .titulo {
+    font-size: 2.4rem;
+  }
+
+  .subtitulo {
+    font-size: 1.1rem;
+  }
+
+  .categoria h3 {
+    font-size: 1.3rem;
+  }
+
+  .icono-categoria {
+    font-size: 1.8rem;
+    padding: 0.9rem;
+  }
+}

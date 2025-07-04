@@ -1,0 +1,62 @@
+<div style="height: 4px; background-color: #001f3f; width: 100%;"></div>
+<footer class="custom-footer text-white pt-5 pb-4">
+  <div class="container text-md-left">
+    <div class="row">
+      <!-- Marca -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="footer-title">Notaría 32</h5>
+        <p class="footer-desc">Servicios notariales confiables, profesionales y a tu alcance. 2025.</p>
+      </div>
+
+      <!-- Explora -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="footer-title">Explora</h5>
+        <ul class="list-unstyled">
+          <li><a [routerLink]="['/home']" routerLinkActive="active">Inicio</a></li>
+          <li><a [routerLink]="['/servicios']" routerLinkActive="active">Servicios</a></li>
+          <li><a [routerLink]="['/nosotros']" routerLinkActive="active">Nosotros</a></li>
+          <li><a [routerLink]="['/contacto']" routerLinkActive="active">Contacto</a></li>
+          <li><a [routerLink]="['/blog']" routerLinkActive="active">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Ayuda -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="footer-title">Ayuda</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Preguntas frecuentes</a></li>
+          <li><a
+              href="https://www.gob.mx/cms/uploads/attachment/file/308445/Aviso_Privacidad_Notarios.pdf">Privacidad</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contacto -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="footer-title">Contacto</h5>
+        <p><i class="fas fa-home"></i> {{ direccion }}</p>
+        <p><i class="fas fa-phone"></i> Tel: {{ telefonoFijo }}</p>
+        <p><i class="fab fa-whatsapp"></i> WhatsApp: {{ whatsapp }}</p>
+        <p><i class="fas fa-envelope"></i> {{ correo }}</p>
+      </div>
+    </div>
+
+    <hr class="mb-4">
+
+    <!-- Redes Sociales -->
+    <div class="row mb-3">
+      <div class="col text-center social-icons">
+        <a class="btn btn-social" href="{{ facebookUrl }}" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-social" href="{{ instagramUrl }}" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- Derechos reservados -->
+    <div class="row">
+      <div class="col text-center">
+        <p>© 2025 <strong>NOTARÍA 32</strong> | Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<div style="height: 4px; background-color: #001f3f; width: 100%;"></div>

@@ -1,0 +1,29 @@
+<section class="blog">
+  <div class="container-blog">
+    <h2 class="blog-titulo">Blog</h2>
+    <div class="underline-blue"></div>
+
+    <p class="blog-subtitulo">
+      Descubre y mantente al día con la información más relevante a través de nuestro blog.
+    </p>
+
+
+    <!-- Lista de artículos -->
+    <div *ngIf="!articuloSeleccionado" class="blog-list">
+      <article class="blog-card" *ngFor="let articulo of articulos" tabindex="0"
+        (click)="seleccionarArticulo(articulo.id)" (keydown.enter)="seleccionarArticulo(articulo.id)"
+        (keydown.space)="seleccionarArticulo(articulo.id)">
+        <h3>{{ articulo.titulo }}</h3>
+        <p>{{ articulo.resumen }}</p>
+        <button class="leer-mas" (click)="seleccionarArticulo(articulo.id); $event.stopPropagation()">Leer más</button>
+      </article>
+    </div>
+
+    <!-- Vista detalle artículo -->
+    <div *ngIf="articuloSeleccionado" class="blog-detalle">
+      <button class="btn-volver" (click)="volverLista()">← Volver al Blog</button>
+      <h3>{{ articuloSeleccionado.titulo }}</h3>
+      <p>{{ articuloSeleccionado.contenido }}</p>
+    </div>
+  </div>
+</section>

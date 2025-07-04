@@ -1,0 +1,122 @@
+.custom-footer {
+  background-color: #001f3f;
+  color: #ffffff;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-title {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.footer-desc {
+  font-size: 0.95rem;
+  color: #cccccc;
+}
+
+.custom-footer a {
+  color: #bbbbbb;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.custom-footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.custom-footer hr {
+  border-color: #bbbbbb;
+  opacity: 0.3;
+}
+
+.custom-footer p {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-bottom: 0.5rem;
+}
+
+.custom-footer i {
+  color: #bbbbbb;
+  margin-right: 0.5rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.btn-social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #bbbbbb;
+  border: 1px solid #bbbbbb;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+}
+
+.btn-social:hover {
+  background-color: #ffffff;
+  color: #001f3f;
+  border-color: #ffffff;
+}
+
+/* 🌐 RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .custom-footer .row > div {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .footer-title {
+    font-size: 1.1rem;
+  }
+
+  .custom-footer p,
+  .custom-footer a {
+    font-size: 0.95rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .btn-social {
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .custom-footer .footer-title {
+    font-size: 1.15rem;
+  }
+
+  .custom-footer p,
+  .custom-footer a {
+    font-size: 0.95rem;
+  }
+
+  .btn-social {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,31 @@
+<section class="contacto-redes">
+  <h2><i class='bx bx-message-rounded-dots'></i> Contáctanos</h2>
+
+  <div class="info-contacto">
+    <p>
+      <i class='bx bx-phone'></i> Teléfono:
+      <a [href]="getTelefonoLink()">{{ telefonoFijo }}</a>
+    </p>
+
+    <p>
+      <i class='bx bxl-whatsapp'></i> WhatsApp:
+      <a [href]="getWhatsappLink()" target="_blank" rel="noopener noreferrer">
+        {{ whatsapp }}
+      </a>
+    </p>
+
+    <p>
+      <i class='bx bx-envelope'></i> Correo:
+      <a [href]="'mailto:' + correo">{{ correo }}</a>
+    </p>
+  </div>
+
+  <div class="redes-sociales">
+    <a [href]="facebookUrl" target="_blank" rel="noopener noreferrer" aria-label="Facebook Notaría 32">
+      <i class='bx bxl-facebook-square'></i>
+    </a>
+    <a [href]="instagramUrl" target="_blank" rel="noopener noreferrer" aria-label="Instagram Notaría 32">
+      <i class='bx bxl-instagram'></i>
+    </a>
+  </div>
+</section>

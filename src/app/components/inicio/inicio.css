@@ -1,0 +1,147 @@
+.inicio-presentacion {
+  background: linear-gradient(135deg, #e3efff, #ffffff);
+  padding: 5rem 2rem;
+  color: #001f3f;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.inicio-presentacion::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: -30%;
+  width: 160%;
+  height: 160%;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(0, 31, 63, 0.05),
+    rgba(0, 31, 63, 0.05) 12px,
+    transparent 12px,
+    transparent 24px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container-inicio {
+  max-width: 850px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.titulo {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+  color: #003366;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 3px rgba(0, 48, 90, 0.2);
+}
+
+.titulo::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 4px;
+  background-color: #00509e;
+  margin: 12px auto 0 auto;
+  border-radius: 2px;
+}
+
+.subtitulo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #00509e;
+  margin-bottom: 2.5rem;
+  font-style: italic;
+  letter-spacing: 1.2px;
+  text-shadow: 0 0 4px rgba(0, 80, 158, 0.15);
+}
+
+.descripcion {
+  font-size: 1.15rem;
+  line-height: 1.85;
+  color: #44596b;
+  max-width: 720px;
+  margin: 0 auto 1.8rem auto;
+  text-align: justify;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.boton-contacto {
+  display: inline-block;
+  padding: 0.75rem 2.5rem;
+  margin-top: 1.5rem;
+  background-color: #00509e;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  box-shadow: 0 5px 12px rgba(0, 80, 158, 0.4);
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.boton-contacto:hover {
+  background-color: #003366;
+}
+
+/* 📱 Mobile (≤768px) */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+  }
+
+  .titulo::after {
+    width: 60px;
+    height: 3px;
+  }
+
+  .subtitulo {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .descripcion {
+    font-size: 1.05rem;
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .boton-contacto {
+    font-size: 1rem;
+    padding: 0.6rem 2rem;
+    letter-spacing: 1px;
+  }
+}
+
+/* 💻 Tablet (769px–1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .titulo {
+    font-size: 2.8rem;
+    letter-spacing: 2.5px;
+  }
+
+  .subtitulo {
+    font-size: 1.45rem;
+  }
+
+  .descripcion {
+    font-size: 1.1rem;
+  }
+
+  .boton-contacto {
+    font-size: 1.1rem;
+    padding: 0.7rem 2.2rem;
+  }
+}

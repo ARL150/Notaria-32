@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
 export class Servicios {
 servicios = [
     {
-      categoria: 'Bienes Raíces',
+      categoria: 'Derecho Inmobiliario',
       items: [
         'Compra-venta de inmuebles',
         'Traspasos',

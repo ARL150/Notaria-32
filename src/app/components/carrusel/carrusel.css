@@ -86,3 +86,34 @@
 .nav-button.next {
   right: 10px;
 }
+
+@media (max-width: 480px) {
+  .nav-button {
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .slide img {
+    max-height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-nav button {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-nav {
+    gap: 10px;
+    bottom: 0.6rem;
+  }
+
+  .carousel-nav button {
+    width: 10px;
+    height: 10px;
+  }
+}
+

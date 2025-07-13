@@ -14,7 +14,7 @@ export class CarruselComponent implements OnInit {
   slides: Slide[] = [];
   currentIndex = 0;
 
-  constructor(private carouselService: CarouselService) { }
+  constructor(private carouselService: CarouselService) {}
 
   ngOnInit() {
     this.slides = this.carouselService.getSlides();
@@ -23,7 +23,6 @@ export class CarruselComponent implements OnInit {
       this.currentIndex = index;
     });
   }
-
 
   goToSlide(index: number) {
     this.carouselService.goToSlide(index);

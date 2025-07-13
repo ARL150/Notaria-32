@@ -13,7 +13,7 @@
 }
 
 .titulo-principal {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 900;
   color: #003366;
   text-transform: uppercase;
@@ -26,10 +26,10 @@
 
 .content {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: flex-start;
-  justify-content: center;
-  gap: 4rem;
+  gap: 2rem;
   max-width: 900px;
   margin: 0 auto;
   position: relative;
@@ -49,14 +49,14 @@
 }
 
 .texto {
-  flex: 0 0 420px;
+  flex: 1 1 48%;
   text-align: left;
-  padding-right: 3rem;
+  padding-right: 1rem;
   z-index: 2;
 }
 
 .texto h3 {
-  font-size: 2.2rem;
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: #0071bc;
@@ -65,11 +65,10 @@
 }
 
 .texto p {
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 3.5vw, 1.25rem);
   line-height: 1.8;
   color: #2a3a53;
   font-weight: 500;
-  max-width: 420px;
   margin-bottom: 1.5rem;
 }
 
@@ -78,7 +77,6 @@
   font-size: 0.85rem;
   color: #556677;
   line-height: 1.4;
-  max-width: 420px;
 }
 
 .cedula {
@@ -103,17 +101,16 @@
 }
 
 .imagen {
-  flex: 0 0 400px;
-  padding-left: 3rem;
+  flex: 1 1 48%;
+  padding-left: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 2;
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 
 .imagen img {
-  max-width: 400px;
   width: 100%;
   height: auto;
   border-radius: 20px;
@@ -121,88 +118,41 @@
   transition: transform 0.3s ease;
   cursor: pointer;
   margin-bottom: 2rem;
+  max-width: 400px;
 }
 
 .imagen img:hover {
   transform: scale(1.05);
 }
 
-/* 📱 Mobile (≤ 768px) */
-@media (max-width: 768px) {
-  .titulo-principal {
-    font-size: 2.6rem;
-    margin-bottom: 2rem;
-    letter-spacing: 3px;
-  }
-
+/* 📱 Mobile (≤ 480px) */
+@media (max-width: 480px) {
   .content {
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    max-width: 100%;
-  }
-
-  .content::before {
-    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .texto,
   .imagen {
-    padding: 0;
+    flex: 1 1 100%;
     max-width: 100%;
-    text-align: center;
+    padding: 0;
+  }
+
+  .texto {
+    text-align: left;
+    margin-top: 1rem;
   }
 
   .imagen {
     margin-top: 2rem;
   }
 
-  .texto h3 {
-    font-size: 1.8rem;
-  }
-
-  .texto p {
-    font-size: 1.1rem;
-  }
-
   .cedulas {
-    text-align: center;
+    text-align: left;
   }
 
-  .cedula {
-    font-size: 0.95rem;
-  }
-}
-
-/* 💻 Tablet (769px – 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .titulo-principal {
-    font-size: 3rem;
-    margin-bottom: 2.5rem;
-  }
-
-  .content {
-    gap: 2.5rem;
-  }
-
-  .texto {
-    padding-right: 2rem;
-  }
-
-  .imagen {
-    padding-left: 2rem;
-    margin-top: 6rem;
-  }
-
-  .imagen img {
-    max-width: 320px;
-  }
-
-  .texto h3 {
-    font-size: 2rem;
-  }
-
-  .texto p {
-    font-size: 1.15rem;
+  .content::before {
+    display: none;
   }
 }

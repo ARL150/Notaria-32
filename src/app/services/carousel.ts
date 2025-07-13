@@ -12,16 +12,16 @@ export class CarouselService {
   private currentIndexSubject = new BehaviorSubject<number>(0);
   currentIndex$: Observable<number> = this.currentIndexSubject.asObservable();
 
-  getSlides(): Slide[] {
-    return this.slides;
-  }
-
   constructor() {
-    interval(6000).subscribe(() => {
+    // Cambiar imagen automáticamente cada 2 segundos
+    interval(2000).subscribe(() => {
       const nextIndex = (this.currentIndexSubject.value + 1) % this.slides.length;
       this.currentIndexSubject.next(nextIndex);
     });
+  }
 
+  getSlides(): Slide[] {
+    return this.slides;
   }
 
   goToSlide(index: number) {

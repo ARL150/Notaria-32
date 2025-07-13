@@ -10,7 +10,7 @@ import { RouterModule } from '@angular/router';
 })
 export class Footer {
 
-  direccion = 'Av. Adolfo López Mateos Ote. #1001 Piso 2 Despacho 212. Plaza Cristal. 20250 Aguascalientes, México';
+  direccion = 'Av. Adolfo López Mateos Ote. #1001 Piso 2 Despacho 212. Plaza Kristal. 20250 Aguascalientes, México';
   telefonoFijo = '449 918 0727';
   whatsapp = '449 173 8984';
   correo = 'notaria32ags@hotmail.com';
